@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B01F804129B8B09B00F919DA /* TrackpadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F804029B8B09B00F919DA /* TrackpadView.swift */; };
+		B01F804329B8B0DC00F919DA /* TrackpadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F804229B8B0DC00F919DA /* TrackpadViewModel.swift */; };
+		B01F804829BA052C00F919DA /* 8-bit-bump.aiff in Resources */ = {isa = PBXBuildFile; fileRef = B01F804729BA052C00F919DA /* 8-bit-bump.aiff */; };
+		B01F804B29BA376F00F919DA /* AudioPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F804A29BA376F00F919DA /* AudioPlayable.swift */; };
+		B01F804D29BA37E200F919DA /* BumpAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F804C29BA37E200F919DA /* BumpAudioPlayer.swift */; };
+		B01F804F29BA398C00F919DA /* MockAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F804E29BA398C00F919DA /* MockAudioPlayer.swift */; };
+		B08EB19E29B7762400CDC192 /* CircularTrackpadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EB19D29B7762400CDC192 /* CircularTrackpadApp.swift */; };
+		B08EB1A229B7762500CDC192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08EB1A129B7762500CDC192 /* Assets.xcassets */; };
+		B08EB1A529B7762500CDC192 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08EB1A429B7762500CDC192 /* Preview Assets.xcassets */; };
+		B08EB1AF29B7762600CDC192 /* TrackpadViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08EB1AE29B7762600CDC192 /* TrackpadViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B08EB1AB29B7762600CDC192 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B08EB19229B7762400CDC192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B08EB19929B7762400CDC192;
+			remoteInfo = "Circular Trackpad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B01F804029B8B09B00F919DA /* TrackpadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadView.swift; sourceTree = "<group>"; };
+		B01F804229B8B0DC00F919DA /* TrackpadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadViewModel.swift; sourceTree = "<group>"; };
+		B01F804729BA052C00F919DA /* 8-bit-bump.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "8-bit-bump.aiff"; sourceTree = "<group>"; };
+		B01F804A29BA376F00F919DA /* AudioPlayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayable.swift; sourceTree = "<group>"; };
+		B01F804C29BA37E200F919DA /* BumpAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumpAudioPlayer.swift; sourceTree = "<group>"; };
+		B01F804E29BA398C00F919DA /* MockAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAudioPlayer.swift; sourceTree = "<group>"; };
+		B08EB19A29B7762400CDC192 /* Circular Trackpad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circular Trackpad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08EB19D29B7762400CDC192 /* CircularTrackpadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTrackpadApp.swift; sourceTree = "<group>"; };
+		B08EB1A129B7762500CDC192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B08EB1A429B7762500CDC192 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B08EB1AA29B7762600CDC192 /* Circular TrackpadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circular TrackpadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B08EB1AE29B7762600CDC192 /* TrackpadViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B08EB19729B7762400CDC192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08EB1A729B7762600CDC192 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B01F804429BA04B400F919DA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				B01F804729BA052C00F919DA /* 8-bit-bump.aiff */,
+				B01F804A29BA376F00F919DA /* AudioPlayable.swift */,
+				B01F804C29BA37E200F919DA /* BumpAudioPlayer.swift */,
+				B01F804E29BA398C00F919DA /* MockAudioPlayer.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		B01F804929BA1DC700F919DA /* Trackpad */ = {
+			isa = PBXGroup;
+			children = (
+				B01F804029B8B09B00F919DA /* TrackpadView.swift */,
+				B01F804229B8B0DC00F919DA /* TrackpadViewModel.swift */,
+			);
+			path = Trackpad;
+			sourceTree = "<group>";
+		};
+		B08EB19129B7762400CDC192 = {
+			isa = PBXGroup;
+			children = (
+				B08EB19C29B7762400CDC192 /* Source */,
+				B08EB1AD29B7762600CDC192 /* Tests */,
+				B08EB19B29B7762400CDC192 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B08EB19B29B7762400CDC192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B08EB19A29B7762400CDC192 /* Circular Trackpad.app */,
+				B08EB1AA29B7762600CDC192 /* Circular TrackpadTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B08EB19C29B7762400CDC192 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B01F804929BA1DC700F919DA /* Trackpad */,
+				B01F804429BA04B400F919DA /* Sound */,
+				B08EB19D29B7762400CDC192 /* CircularTrackpadApp.swift */,
+				B08EB1A129B7762500CDC192 /* Assets.xcassets */,
+				B08EB1A329B7762500CDC192 /* Preview Content */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B08EB1A329B7762500CDC192 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B08EB1A429B7762500CDC192 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B08EB1AD29B7762600CDC192 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B08EB1AE29B7762600CDC192 /* TrackpadViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B08EB19929B7762400CDC192 /* Circular Trackpad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B08EB1BE29B7762600CDC192 /* Build configuration list for PBXNativeTarget "Circular Trackpad" */;
+			buildPhases = (
+				B08EB19629B7762400CDC192 /* Sources */,
+				B08EB19729B7762400CDC192 /* Frameworks */,
+				B08EB19829B7762400CDC192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Circular Trackpad";
+			productName = "Circular Trackpad";
+			productReference = B08EB19A29B7762400CDC192 /* Circular Trackpad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B08EB1A929B7762600CDC192 /* Circular TrackpadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B08EB1C129B7762600CDC192 /* Build configuration list for PBXNativeTarget "Circular TrackpadTests" */;
+			buildPhases = (
+				B08EB1A629B7762600CDC192 /* Sources */,
+				B08EB1A729B7762600CDC192 /* Frameworks */,
+				B08EB1A829B7762600CDC192 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B08EB1AC29B7762600CDC192 /* PBXTargetDependency */,
+			);
+			name = "Circular TrackpadTests";
+			productName = "Circular TrackpadTests";
+			productReference = B08EB1AA29B7762600CDC192 /* Circular TrackpadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B08EB19229B7762400CDC192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B08EB19929B7762400CDC192 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B08EB1A929B7762600CDC192 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = B08EB19929B7762400CDC192;
+					};
+				};
+			};
+			buildConfigurationList = B08EB19529B7762400CDC192 /* Build configuration list for PBXProject "Circular Trackpad" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B08EB19129B7762400CDC192;
+			productRefGroup = B08EB19B29B7762400CDC192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B08EB19929B7762400CDC192 /* Circular Trackpad */,
+				B08EB1A929B7762600CDC192 /* Circular TrackpadTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B08EB19829B7762400CDC192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08EB1A529B7762500CDC192 /* Preview Assets.xcassets in Resources */,
+				B01F804829BA052C00F919DA /* 8-bit-bump.aiff in Resources */,
+				B08EB1A229B7762500CDC192 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08EB1A829B7762600CDC192 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B08EB19629B7762400CDC192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01F804129B8B09B00F919DA /* TrackpadView.swift in Sources */,
+				B01F804F29BA398C00F919DA /* MockAudioPlayer.swift in Sources */,
+				B01F804D29BA37E200F919DA /* BumpAudioPlayer.swift in Sources */,
+				B08EB19E29B7762400CDC192 /* CircularTrackpadApp.swift in Sources */,
+				B01F804B29BA376F00F919DA /* AudioPlayable.swift in Sources */,
+				B01F804329B8B0DC00F919DA /* TrackpadViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B08EB1A629B7762600CDC192 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B08EB1AF29B7762600CDC192 /* TrackpadViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B08EB1AC29B7762600CDC192 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B08EB19929B7762400CDC192 /* Circular Trackpad */;
+			targetProxy = B08EB1AB29B7762600CDC192 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B08EB1BC29B7762600CDC192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B08EB1BD29B7762600CDC192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B08EB1BF29B7762600CDC192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniel.Circular-Trackpad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B08EB1C029B7762600CDC192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Source/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniel.Circular-Trackpad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B08EB1C229B7762600CDC192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniel.Circular-TrackpadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circular Trackpad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Circular Trackpad";
+			};
+			name = Debug;
+		};
+		B08EB1C329B7762600CDC192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.daniel.Circular-TrackpadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Circular Trackpad.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Circular Trackpad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B08EB19529B7762400CDC192 /* Build configuration list for PBXProject "Circular Trackpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08EB1BC29B7762600CDC192 /* Debug */,
+				B08EB1BD29B7762600CDC192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B08EB1BE29B7762600CDC192 /* Build configuration list for PBXNativeTarget "Circular Trackpad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08EB1BF29B7762600CDC192 /* Debug */,
+				B08EB1C029B7762600CDC192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B08EB1C129B7762600CDC192 /* Build configuration list for PBXNativeTarget "Circular TrackpadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08EB1C229B7762600CDC192 /* Debug */,
+				B08EB1C329B7762600CDC192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B08EB19229B7762400CDC192 /* Project object */;
+}
